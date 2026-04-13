@@ -1,0 +1,33 @@
+﻿Bootstrap summary
+
+Mode:                   dry-run
+Run ID:                 run_20260412_085134
+Run directory:          .catalog-data-doc-bootstrap-dry-preview\previews\run_20260412_085134
+
+Decision summary
+Input rows:             5
+AUTO_CREATE:            3
+AUTO_MATCH:             0
+REVIEW:                 1
+FAILURE:                1
+
+Catalog state
+Canonical artists:      3
+Canonical releases:     3
+
+Target
+Engine:                 mysql
+Artist table:           service_artists
+Release table:          service_releases
+
+Artifacts
+Review queue rows:      2
+Review queue:           .catalog-data-doc-bootstrap-dry-preview\previews\run_20260412_085134\review_queue.csv
+Review summary:         .catalog-data-doc-bootstrap-dry-preview\previews\run_20260412_085134\review-summary.txt
+
+Result
+No changes have been applied.
+Canonical catalog updated: no
+Dry-run did not change the canonical catalog.
+Run again with --export-sql or --apply when ready.
+Review the flagged rows in .catalog-data-doc-bootstrap-dry-preview\previews\run_20260412_085134\review_queue.csv.

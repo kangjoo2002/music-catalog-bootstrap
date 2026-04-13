@@ -1,0 +1,5 @@
+{"id":"mb-release-001","title":"Debut","date":"1993-07-05","barcode":"5016958997028","artist-credit":[{"name":"Bjork","joinphrase":"","artist":{"id":"mb-artist-001","name":"Bjork"}}]}
+{"id":"mb-release-002","title":"OK Computer","date":"1997-05-21","barcode":"724382885229","artist-credit":[{"name":"Radiohead","joinphrase":"","artist":{"id":"mb-artist-002","name":"Radiohead"}}]}
+{"id":"mb-release-003","title":"OK Computer","date":"1997-06-16","barcode":null,"artist-credit":[{"name":"Radiohead","joinphrase":"","artist":{"id":"mb-artist-002","name":"Radiohead"}}]}
+{"id":"mb-release-004","title":"Loveless","date":"1991-11-04","barcode":null,"artist-credit":[{"name":"My Bloody Valentine","joinphrase":"","artist":{"id":"mb-artist-003","name":"My Bloody Valentine"}}]}
+{"id":"mb-release-005","title":"Unknown Album","date":"1991-11-04","barcode":null,"artist-credit":[]}

@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: music-catalog-bootstrap-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: music_app
+      MYSQL_USER: bootstrap
+      MYSQL_PASSWORD: bootstrap
+    ports:
+      - "53306:3306"
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping --host=127.0.0.1 --user=bootstrap --password=bootstrap --silent"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d:ro

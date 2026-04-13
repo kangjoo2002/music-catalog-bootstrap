@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+APP_HOME=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
+
+if command -v python3 >/dev/null 2>&1; then
+  exec python3 "$APP_HOME/scripts/prepublish-check.py"
+fi
+
+exec python "$APP_HOME/scripts/prepublish-check.py"

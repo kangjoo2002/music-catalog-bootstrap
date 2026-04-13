@@ -1,0 +1,11 @@
+﻿Target engine: mysql
+Write mode: insert-ignore
+Artist table: service_artists
+Release table: service_releases
+Canonical artists: 3
+Canonical releases: 3
+Latest run: run_20260412_083317
+Latest auto create: 3
+Latest auto match: 0
+Latest review: 1
+Latest failure: 1

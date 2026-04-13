@@ -1,0 +1,3 @@
+line_number,source_id,decision_type,reason_code,artist_name,release_title,release_date,upc,candidate_release_id,candidate_artist_name,candidate_release_title,candidate_release_date
+4,demo-003,REVIEW,SAME_ARTIST_TITLE_DIFFERENT_DATE,Radiohead,OK Computer,1997-06-16,,2,Radiohead,OK Computer,1997-05-21
+6,demo-005,FAILURE,MISSING_REQUIRED_FIELD,,Unknown Album,1991-11-04,,,,,

@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install package with apply extras
+        run: python -m pip install -e ".[apply]"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Smoke test release ZIP
+        run: |
+          python scripts/build-release.py
+          python scripts/smoke-release.py
+
+      - name: Run PostgreSQL apply smoke
+        shell: pwsh
+        run: ./scripts/smoke-apply.ps1 -Engine postgresql -Cleanup
+
+      - name: Run MySQL apply smoke
+        shell: pwsh
+        run: ./scripts/smoke-apply.ps1 -Engine mysql -Cleanup
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: music-catalog-bootstrap
+          path: build/distributions/*.zip
+
+      - name: Publish GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/distributions/*.zip
+          generate_release_notes: true

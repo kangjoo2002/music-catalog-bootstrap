@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: music-catalog-bootstrap-postgres
+    environment:
+      POSTGRES_DB: music_app
+      POSTGRES_USER: bootstrap
+      POSTGRES_PASSWORD: bootstrap
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --username=bootstrap --dbname=music_app"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d:ro

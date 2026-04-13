@@ -1,0 +1,11 @@
+Review queue summary
+
+Rows requiring review: 2
+
+Breakdown by reason
+- FAILURE:MISSING_REQUIRED_FIELD: 1
+- REVIEW:SAME_ARTIST_TITLE_DIFFERENT_DATE: 1
+
+First flagged rows
+- demo-003: SAME_ARTIST_TITLE_DIFFERENT_DATE [Radiohead / OK Computer / 1997-06-16] -> candidate #2 (OK Computer, 1997-05-21)
+- demo-005: MISSING_REQUIRED_FIELD [ / Unknown Album / 1991-11-04]

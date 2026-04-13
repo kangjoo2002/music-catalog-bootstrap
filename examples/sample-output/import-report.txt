@@ -1,0 +1,6 @@
+﻿Run ID: run_20260412_083317
+Total rows: 5
+Auto create: 3
+Auto match: 0
+Review: 1
+Failure: 1

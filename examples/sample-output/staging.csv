@@ -1,0 +1,6 @@
+line_number,source_id,artist_name,artist_key,release_title,release_key,release_date,upc
+2,demo-001,Bjork,bjork,Debut,bjork|debut|1993-07-05,1993-07-05,5016958997028
+3,demo-002,Radiohead,radiohead,OK Computer,radiohead|ok computer|1997-05-21,1997-05-21,724382885229
+4,demo-003,Radiohead,radiohead,OK Computer,radiohead|ok computer|1997-06-16,1997-06-16,
+5,demo-004,My Bloody Valentine,my bloody valentine,Loveless,my bloody valentine|loveless|1991-11-04,1991-11-04,
+6,demo-005,,,Unknown Album,|unknown album|1991-11-04,1991-11-04,

@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+if [ -n "${PYTHONPATH:-}" ]; then
+  PYTHONPATH="$SCRIPT_DIR/src:$PYTHONPATH"
+else
+  PYTHONPATH="$SCRIPT_DIR/src"
+fi
+export PYTHONPATH
+
+if command -v python3 >/dev/null 2>&1; then
+  exec python3 -m music_catalog_bootstrap "$@"
+fi
+
+exec python -m music_catalog_bootstrap "$@"
