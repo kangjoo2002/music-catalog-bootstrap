@@ -8,8 +8,6 @@
 
 Scope is limited to initial catalog bootstrap. It is not a replication pipeline or a general ETL framework.
 
-![Bootstrap demo](docs/assets/hero-bootstrap.svg)
-
 ## Features
 
 - Supports MusicBrainz `release.tar.xz`, `release.xz`, `release.json`, and `release.jsonl`
@@ -128,13 +126,10 @@ Tracked example outputs:
 - [`examples/sample-output/bootstrap-export-sql.txt`](examples/sample-output/bootstrap-export-sql.txt)
 - [`examples/sample-output/bootstrap-apply-postgres.txt`](examples/sample-output/bootstrap-apply-postgres.txt)
 - [`examples/sample-output/bootstrap-apply-mysql.txt`](examples/sample-output/bootstrap-apply-mysql.txt)
-- [`examples/sample-output/import-report.txt`](examples/sample-output/import-report.txt)
-- [`examples/sample-output/plan-report.txt`](examples/sample-output/plan-report.txt)
 - [`examples/sample-output/decisions.csv`](examples/sample-output/decisions.csv)
 - [`examples/sample-output/review_queue.csv`](examples/sample-output/review_queue.csv)
 - [`examples/sample-output/review-summary.txt`](examples/sample-output/review-summary.txt)
 - [`examples/sample-output/catalog.sql`](examples/sample-output/catalog.sql)
-- [`examples/sample-output/export-report-postgres.txt`](examples/sample-output/export-report-postgres.txt)
 - [`examples/sample-output/catalog.postgres.sql`](examples/sample-output/catalog.postgres.sql)
 
 Direct apply examples:

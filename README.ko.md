@@ -8,8 +8,6 @@
 
 범위는 초기 카탈로그 bootstrap에 한정됩니다. 복제 파이프라인이나 범용 ETL 도구는 아닙니다.
 
-![Bootstrap demo](docs/assets/hero-bootstrap.svg)
-
 ## 기능
 
 - MusicBrainz `release.tar.xz`, `release.xz`, `release.json`, `release.jsonl` 입력 지원
@@ -128,13 +126,10 @@ WHERE `name_key` = 'radiohead';
 - [`examples/sample-output/bootstrap-export-sql.txt`](examples/sample-output/bootstrap-export-sql.txt)
 - [`examples/sample-output/bootstrap-apply-postgres.txt`](examples/sample-output/bootstrap-apply-postgres.txt)
 - [`examples/sample-output/bootstrap-apply-mysql.txt`](examples/sample-output/bootstrap-apply-mysql.txt)
-- [`examples/sample-output/import-report.txt`](examples/sample-output/import-report.txt)
-- [`examples/sample-output/plan-report.txt`](examples/sample-output/plan-report.txt)
 - [`examples/sample-output/decisions.csv`](examples/sample-output/decisions.csv)
 - [`examples/sample-output/review_queue.csv`](examples/sample-output/review_queue.csv)
 - [`examples/sample-output/review-summary.txt`](examples/sample-output/review-summary.txt)
 - [`examples/sample-output/catalog.sql`](examples/sample-output/catalog.sql)
-- [`examples/sample-output/export-report-postgres.txt`](examples/sample-output/export-report-postgres.txt)
 - [`examples/sample-output/catalog.postgres.sql`](examples/sample-output/catalog.postgres.sql)
 
 직접 반영 예제:

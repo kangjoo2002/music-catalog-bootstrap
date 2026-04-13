@@ -54,7 +54,6 @@ def copy_release_tree(staging_dir: Path) -> None:
     shutil.copy2(ROOT / "LICENSE", staging_dir / "LICENSE")
     shutil.copy2(ROOT / "pyproject.toml", staging_dir / "pyproject.toml")
     shutil.copy2(ROOT / "README.md", staging_dir / "README.md")
-    shutil.copy2(ROOT / "README.en.md", staging_dir / "README.en.md")
     shutil.copy2(ROOT / "README.ko.md", staging_dir / "README.ko.md")
     shutil.copy2(ROOT / "CHANGELOG.md", staging_dir / "CHANGELOG.md")
     shutil.copy2(ROOT / "CONTRIBUTING.md", staging_dir / "CONTRIBUTING.md")
