@@ -19,7 +19,7 @@ classifiers = [
 
 [project.optional-dependencies]
 apply = [
-    "psycopg[binary]>=3.2,<4",
+    "psycopg[binary]>=3.3.3,<4",
     "mysql-connector-python>=9,<10",
 ]
 
